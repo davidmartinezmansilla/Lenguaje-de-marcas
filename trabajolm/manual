@@ -7,6 +7,8 @@
 </head>
 
 <body>
-En este sencillo manual, vamos a describir lo básico para realizar una página web e iremos añadiendo cosas poco a poco, como tablas, listas, etc
+En este sencillo manual, vamos a describir lo básico para realizar una página web e iremos añadiendo cosas poco a poco, como tablas, listas, etc...<br>
+Lo primordial es darle un doctype valido, para ello lo pondremos como "<!doctype html>"
+
 </body
 </html>
