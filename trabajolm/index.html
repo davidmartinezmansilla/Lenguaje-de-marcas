@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<title>Manual HTML Básico</title>
+
+<meta charset="utf-8">
+
+</head>
+
+
+
+<body>
+
+<h2>Manual HTML Básico</h2>
+
+
+<h3><u>Formato</u></h3>
+<p>
+
+
+A continuación vamos a ver de manera básica, lo que necesitamos para crear una pagina html.<br>
+
+Lo principal es darle un formato correcto para ello, lo primero que pondremos en nuestro<br>
+
+documento a guardar como .html, será &lt;!doctype html&gt;y además, le indicaremos<br>
+
+que tipo de idioma usará en caso de que se use un narrador para los invidentes<br>
+
+para ello justo debajo pondremos la etiqueta html con el atributo lang y especificaremos<br>
+
+el lenguaje que queremos, quedaria algo así &lt;html lang="es"&gt;<br>
+
+</p><p>
+
+El documento html, debe contener unas etiquetas obligatorias, entre ellas<br>
+
+podemos encontrar la html, como vimos anteriormente. Otra sería la etiqueta<br>
+
+&lt;head&gt; la cual sería la cabezera de nuestro documento. <br>
+
+Seguría la &lt;head&gt; el cuerpo del documento, donde irá el texto, imágenes,<br>
+
+listas, tablas... en fin, prácticamente todo lo que queramos añadir.<br>
+
+Esas serían las obligatorias a poner, las cuales, una vez pongamos, tendremos que cerrarlas<br>
+
+Para cerrarlas tendremos que volver a ponerlas, pero añadiendo un / antes del nombre de etiqueta<br>
+
+es decir, &lt;/head&gt; &lt;/body&gt; &lt;/html&gt;<br>
+
+</p><p>
+Dentro de algunas etiquetas, pueden ir por debajo otras, ya sea para añadir alguna función,<br>
+
+hacer que sea cursiva, etc... por ejemplo, dentro de &lt;head&gt; quizás nos interese poner<br>
+
+un título, para ello entre el rango de etiqueta head, usaremos la de title, quedando algo así.<br>
+
+&lt;head&gt;<br>
+&lt;title&gt;Título que quieras poner&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+
+</p>
+<p>
+Como veís, todas las etiquetas que vamos abriendo, se van cerrando una vez acaban, para que<br>
+
+no haya problemas en el documento. Pero, no todas las etiquetas se cierran, algunas contienen<br>
+
+lo que se denomina como elemento vacío. Por ejemplo la etiqueta &lt;br&gt; es un salto de línea<br>
+
+y una vez se usa (abre) no hace falta cerrarla &lt;/br&gt;, o &lt;hr&gt; para poner una línea vertical.<br>
+
+</p>
+<hr>
+
+
+<h3><u>Títulos</u></h3>
+
+
+Antes vimos como añadir un título en el &lt;head&gt;,pero ¿y si queremos añadir varios más?<br>
+
+Lo podemos hacer con las siguientes etiquetas por ejemplo, dentro de &lt;body&gt;: <br>
+
+<h1>&lt;h1&gt;Otro título&lt;/h1&gt;</h1>
+
+<h2>&lt;h2&gt;Otro título&lt;/h2&gt;</h2>
+
+<h3>&lt;h3&gt;Otro título&lt;/h3&gt;</h3>
+
+<h4>&lt;h4&gt;Otro título&lt;/h4&gt;</h4>
+
+<h5>&lt;h5&gt;Otro título&lt;/h5&gt;</h5>
+
+<h6>&lt;h6&gt;Otro título&lt;/h6&gt;</h6>
+
+<hr>
+
+
+<h3><u>Agrupación</u></h3>
+
+
+<p>
+Ya vimos como incluir párrafos, asíque iremos a otro tipo de agrupaciones, como por ejemplo, las listas.<br>
+
+A la hora de crear listas, tenemos dos opciones: una lista ordenada (por numeros) o bien sin ordenar.<br>
+
+Si queremos una ordenada, tendremos que usar la etiqueta &lt;ol&gt;(ol, de ordened list), si contrariamente<br>
+
+queremos usar una sin ordenar, usaremos esta otra etiqueta &lt;ul&gt; (unordered list).<br>
+
+Una vez creada, tocará poner los elementos de texto que precisemos en ella, para ello, hacemos uso de otra<br>
+etiqueta más llamada, &lt;li&gt; (list) e iremos cerrando todas ellas una vez terminemos, incluida la lista.<br>
+
+Debería quedarnos algo tal que así:<br>
+
+</p>
+<br>
+
+Ordenada
+
+<ol>&lt;ol&gt;<br>			
+
+&lt;li&gt;uno&lt;li&gt;<li>uno</li>	
+
+&lt;li&gt;dos&lt;li&gt;<li>dos</li>	
+
+&lt;li&gt;tres&lt;li&gt;<li>tres</li>	
+
+&lt;/ol&gt;</ol>		
+
+<br>
+
+Sin ordenar
+
+<ul>&lt;ul&gt;<br>
+
+&lt;li&gt;uno&lt;li&gt;<li>uno</li>
+
+&lt;li&gt;dos&lt;li&gt;<li>dos</li>
+
+&lt;li&gt;tres&lt;li&gt;<li>tres</li>
+
+&lt;/ul&gt;</ul>
+
+
+También tenemos el texto preformado. Esto lo podemos usar para cuando queramos escribir un texto en el que<br>
+
+nos interese que se muestre tal cual es, ya que se escribe monoespaciado. Tenemos que tener en cuenta<br>
+
+que si ponemos un salto de linea de manera normal como en un procesador de textos, o muchos espacios en blanco<br>
+
+la pagina web, lo tratará como si fuera un único espacio en blanco. El texto preformado se usa con &lt;pre&gt;<br>
+
+
+&lt;pre&gt;</p><pre>Este texto se escribirá   	   			tal cual			
+			gracias a esta
+etiqueta que estamos usando	       	ahora mismo.</pre>&lt;/pre&gt;
+<br>
+
+
+
+
+<p>
+Con &lt;p&gt; podemos crear párrafos, pero si añadimos saltos de linea de manera normal, no se verán reflejados<br>
+</p>
+<hr>
+
+<h3><u>Resaltados</u></h3>
+
+
+<p>
+Para añadir resaltados, tendremos que usar las siguientes expresiones en el texto que queramos usarlas<br>
+Italic, o Bastardilla &lt;i&gt;, Bold, o Negrita &lt;b&gt; y Underlined, o Subrayada &lt;u&gt;<br>
+También podemos encontrar &lt;em&gt; para recalcar o dar énfasis, &lt;strong&gt; para una parte seria,<br>
+&lt;small&gt; letra pequeña, o &lt;s&gt; representando contenido irrelevante u obsoleto<br>
+Recordad, que estas se han de cerrar, sino, aplicarian sus efectos a toda la página.<br>
+</p>
+
+<hr>
+<h3><u>Hiperenlace</u></h3>
+
+
+<p>
+A la hora de crear Hiperenlaces, para poder visitar otra pagina, se hará de la siguiente manera:<br>
+</p>
+&lt;a href="http://www.google.es"&gt;Google&lt;/a&gt;<br>
+<a href="http://www.google.es">Google</a> --> (así es como debería quedar)
+<p>
+Donde &lt;a&gt; sería anchor (ancla), href el atriburo para crear el enlace, y después ponemos<br>
+la dirección a donde queremos ir (ya sea local para ir a otro archivo, o una página web distinta.<br>
+Entre la etiqueta de apertura y la de cierre, podemos poner por ejemplo el nombre de a donde iremos<br>
+en caso de se use el Hiperenlace creado.
+</p>
+
+
+</body>
