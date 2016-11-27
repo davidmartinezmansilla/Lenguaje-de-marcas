@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
 
@@ -31,15 +31,20 @@ para ello justo debajo pondremos la etiqueta html con el atributo lang y especif
 
 el lenguaje que queremos, quedaria algo así &lt;html lang="es"&gt;<br>
 
-</p><p>
+</p>
+<p>
 
 El documento html, debe contener unas etiquetas obligatorias, entre ellas<br>
 
 podemos encontrar la html, como vimos anteriormente. Otra sería la etiqueta<br>
 
-&lt;head&gt; la cual sería la cabezera de nuestro documento. <br>
+&lt;head&gt; la cual sería la cabezera de nuestro documento, y dentro de esta,<br>
+podemos poner otras como la de &lt;title&gt;, justo después podemos poner <br>
+la de metadatos, la cual especificará que tipo de lenguaje de metadatos usará<br>
+en este caso &lt;meta charset="utf-8"&gt;, las etiquetas de metadatos<br>
+no las veremos en la pagina web, por lo que en realidad, no importa donde las pongamos<br>
 
-Seguría la &lt;head&gt; el cuerpo del documento, donde irá el texto, imágenes,<br>
+Seguría la &lt;body&gt; el cuerpo del documento, donde irá el texto, imágenes,<br>
 
 listas, tablas... en fin, prácticamente todo lo que queramos añadir.<br>
 
@@ -49,7 +54,8 @@ Para cerrarlas tendremos que volver a ponerlas, pero añadiendo un / antes del n
 
 es decir, &lt;/head&gt; &lt;/body&gt; &lt;/html&gt;<br>
 
-</p><p>
+</p>
+<p>
 Dentro de algunas etiquetas, pueden ir por debajo otras, ya sea para añadir alguna función,<br>
 
 hacer que sea cursiva, etc... por ejemplo, dentro de &lt;head&gt; quizás nos interese poner<br>
@@ -61,6 +67,7 @@ un título, para ello entre el rango de etiqueta head, usaremos la de title, que
 &lt;/head&gt;<br>
 
 </p>
+
 <p>
 Como veís, todas las etiquetas que vamos abriendo, se van cerrando una vez acaban, para que<br>
 
@@ -114,8 +121,6 @@ etiqueta más llamada, &lt;li&gt; (list) e iremos cerrando todas ellas una vez t
 Debería quedarnos algo tal que así:<br>
 
 </p>
-<br>
-
 Ordenada
 
 <ol>&lt;ol&gt;<br>			
@@ -126,10 +131,7 @@ Ordenada
 
 &lt;li&gt;tres&lt;li&gt;<li>tres</li>	
 
-&lt;/ol&gt;</ol>		
-
-<br>
-
+&lt;/ol&gt;</ol>
 Sin ordenar
 
 <ul>&lt;ul&gt;<br>
@@ -142,7 +144,7 @@ Sin ordenar
 
 &lt;/ul&gt;</ul>
 
-
+<p>
 También tenemos el texto preformado. Esto lo podemos usar para cuando queramos escribir un texto en el que<br>
 
 nos interese que se muestre tal cual es, ya que se escribe monoespaciado. Tenemos que tener en cuenta<br>
@@ -160,12 +162,13 @@ etiqueta que estamos usando	       	ahora mismo.</pre>&lt;/pre&gt;
 
 
 
+</p>
 <p>
 Con &lt;p&gt; podemos crear párrafos, pero si añadimos saltos de linea de manera normal, no se verán reflejados<br>
 </p>
 <hr>
 
-<h3><u>Resaltados</u></h3>
+<h3><u>Elementos Semanticos</u></h3>
 
 
 <p>
@@ -175,11 +178,6 @@ También podemos encontrar &lt;em&gt; para recalcar o dar énfasis, &lt;strong&g
 &lt;small&gt; letra pequeña, o &lt;s&gt; representando contenido irrelevante u obsoleto<br>
 Recordad, que estas se han de cerrar, sino, aplicarian sus efectos a toda la página.<br>
 </p>
-
-<hr>
-<h3><u>Hiperenlace</u></h3>
-
-
 <p>
 A la hora de crear Hiperenlaces, para poder visitar otra pagina, se hará de la siguiente manera:<br>
 </p>
@@ -191,6 +189,86 @@ la dirección a donde queremos ir (ya sea local para ir a otro archivo, o una p�
 Entre la etiqueta de apertura y la de cierre, podemos poner por ejemplo el nombre de a donde iremos<br>
 en caso de se use el Hiperenlace creado.
 </p>
+El salto de línea es para eso mismo, añadir un salto de línea, ya que como dijimos, anteriormente<br>
+la página web no lo mostrará como tal, ya que será un espacio en blanco, para ello utilizamos el &lt;br&gt;.<br>
+</p>
+<hr>
 
+<h3><u>Tablas</u></h3>
+
+<p>
+Podemos añadir tablas a nuestra web, con la etiqueta 
+
+&lt;table&gt;, después para añadir filas, &lt;tr&gt;<br>
+y para las columnas &lt;td&gt; (si queremos dentro de la etiqueta table, se puede poner el atributo border<br>
+para que le ponga un pequeño borde a nuestra tabla, de esta manera se visualiza mejor).<br>
+</p>
+<pre>&lt;table border&gt;
+	&lt;tr&gt;
+		&lt;td&gt;esto&lt;tr&gt;
+		&lt;td&gt;es&lt;tr&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;una&lt;tr&gt;
+		&lt;td&gt;tabla&lt;tr&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</pre>
+<table border center>
+	<tr>
+		<td>esto</td>
+		<td>es</td>
+	</tr>
+	<tr>
+		<td>una</td>
+		<td>tabla</td>
+	</tr>
+</table>
+<hr>
+
+
+<h3><u>Contenido Encajado: Imágenes</u></h3>
+<p>
+Para poder poner imágenes usamos la etiqueta &lt;img&gt; dentro de su etiqueta, podemos poner varios atributos,<br>
+el scr nos sirve para dar la ruta de la imágen que queremos colocar, le podemos poner un width, para cambiar su ancho<br>
+o un heigh, para la altura. No solo podemos poner imágenes del tipo .jpg, sino también .gif, .png, o otros.<br>
+A una imágen le podemos poner un texto alternativo para dar una descripción de la imágen con el atributo alt.<br>
+</p>
+<p>
+Los mapas de imágenes, se usan para añadir una zona en la imagen la cual sirve para convertirla en una imagen interactiva<br>
+es decir, dentro de una imagen, se pueden colocar varias zonas, las cuales al hacer click en estas, nos lleven a diferentes<br>
+enlaces, o bien zonas de la misma página o bien otras, incluso externas<br>
+Para esto tendremos que crear la etiqueta &lt;map name="nombre del mapa"&gt; y dentro de la etiqueta de &lt;img&gt; en la que<br>
+queramos añadir esto, pondremos el atributo usemap="#nombre del mapa" para que esten relacionados.<br>
+</p>
+<p>
+Entre la etiqueta map, y su cierre, podremos usar la etiqueta &lt;area&gt;, para poder indicar que tipo de área queremos usar<br>
+por ejemplo si usamos el atributo rect, (coordenada) esto formara una zona rectangular en la que podremos hacer click dentro de la imagen.<br>
+Al darle el atributo de coordenada, tendremos que especificar que zona de imagen es, y esto se vería así<br>
+rect: x-izq, y-supr, x-dcha, y-inf<br>
+circle: x-centro, y-centro, radio.<br>
+poly: x1,y1, x2,y2, x3,y3, etc...<br>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+https://davidmartinezmansilla.github.io/Lenguaje-de-marcas/trabajolm/
+<br>
+<br>
+<br>
+<br>
 
 </body>
+</html>
